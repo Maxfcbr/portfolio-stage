@@ -1,0 +1,339 @@
+//dit zijn de scss variables
+
+$maincolor: #1d1d20;
+$white: #ccc;
+$darkblue: #070572;
+$darkgrey: #3f3f3f;
+$lightblue: #07afbb;
+$blue: #002fff;
+$lightgrey: #666666;
+$yellow: #c6a002;
+$black: #000000;
+
+// variables die niet werken
+
+//dit zijn mijn fonts
+@font-face {
+  font-family: "Work Sans";
+  src: url("/fonts/WorkSans-Italic.eot");
+  src: url("/fonts/WorkSans-Italic.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/WorkSans-Italic.woff2") format("woff2"),
+    url("/fonts/WorkSans-Italic.woff") format("woff"),
+    url("/fonts/WorkSans-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("/fonts/WorkSans-Bold.eot");
+  src: url("/fonts/WorkSans-Bold.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/WorkSans-Bold.woff2") format("woff2"),
+    url("/fonts/WorkSans-Bold.woff") format("woff"),
+    url("/fonts/WorkSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("/fonts/WorkSans-Regular.eot");
+  src: url("/fonts/WorkSans-Regular.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/WorkSans-Regular.woff2") format("woff2"),
+    url("/fonts/WorkSans-Regular.woff") format("woff"),
+    url("/fonts/WorkSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+//-----//
+
+p,
+a,
+h1,
+h2,
+h3 {
+  font-family: "Work Sans";
+}
+
+body {
+  background-color: $maincolor;
+}
+
+.naam {
+  font-size: 40px;
+}
+
+.Project {
+  color: $white;
+  flex-direction: row;
+  font-size: 15px;
+  position: fixed;
+  right: 20%;
+  z-index: 200;
+
+  ul {
+    padding-top: 4rem;
+    width: fit-content;
+  }
+
+  li {
+    margin-bottom: 3.5rem;
+    a {
+      width: 100%;
+      display: inline-block;
+    }
+  }
+  li:nth-child(3) {
+    margin-bottom: 0;
+  }
+}
+
+//welcome text
+.Welcome {
+  color: $white;
+  width: 15%;
+  margin-left: 30%;
+  padding-bottom: 10rem;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.head {
+  font-size: 50px;
+  padding: 20px;
+}
+
+//cv specten
+.CV {
+  margin: 0 auto;
+  font-size: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 56%;
+  border: none;
+  border-radius: 20px;
+}
+
+//buttons project
+.knop {
+  padding: 15px 25px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: $white;
+  background-color: $darkblue;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px $darkgrey;
+}
+
+.knop:hover {
+  background-color: $lightblue;
+  transition: 0.4s;
+}
+
+.knop:active {
+  background-color: $blue;
+  box-shadow: 0 5px $lightgrey;
+  transform: translateY(4px);
+}
+
+//image specten
+.mimage {
+  height: 100px;
+  width: 200px;
+  margin-left: 15%;
+  margin-top: 4%;
+}
+
+//socials specten
+.socials {
+  font-size: 40px;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    a {
+      text-decoration: none;
+    }
+  }
+  i {
+    color: $yellow;
+  }
+}
+
+//cv knop specten
+.CV-knop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  a {
+    color: $white;
+  }
+}
+
+//hoek 1
+.l1 {
+  width: 20%;
+  position: absolute;
+  left: 320px;
+  top: -40px;
+}
+
+//hoek 2
+.l2 {
+  width: 20%;
+  position: absolute;
+  right: 160px;
+  top: 74%;
+  width: 30%;
+  pointer-events: none;
+  position: fixed;
+}
+
+//kleuren hoek
+.st0 {
+  fill: $black;
+  stroke: $black;
+  stroke-miterlimit: 10;
+}
+
+//slide schaakbord
+.Schaakbord {
+  img {
+    width: 15%;
+    height: 20%;
+    margin-left: 35%;
+    float: left;
+  }
+}
+
+//slide memory
+.Memory {
+  img {
+    width: 25%;
+    height: 20%;
+    margin-left: 25%;
+    float: left;
+  }
+}
+
+//slide pong
+.Pong {
+  img {
+    width: 25%;
+    height: 20%;
+    margin-left: 26%;
+    float: left;
+  }
+}
+
+//tekst memory
+.tekstm {
+  color: $white;
+  margin-left: 31%;
+  margin-top: 3%;
+  padding: 90px;
+}
+
+//tekst pong
+.tekstp {
+  color: $white;
+  margin-left: 31%;
+  margin-top: 3%;
+  padding: 90px;
+}
+
+//teskt schaakbord
+.teksts {
+  color: $white;
+  padding: 90px;
+}
+
+//pong button slide
+.vieuwpong {
+  padding: 15px 25px;
+  font-size: 15px;
+  color: $white;
+  background-color: $darkblue;
+  border-radius: 15px;
+  box-shadow: 0 9px $darkgrey;
+}
+
+.vieuwpong:hover {
+  background-color: $lightblue;
+  transition: 0.4s;
+}
+
+.vieuwpong:active {
+  background-color: $blue;
+  box-shadow: 0 5px $lightgrey;
+  transform: translateY(4px);
+}
+
+//schaakbord button slide
+.vieuwschaakbord {
+  padding: 15px 25px;
+  font-size: 15px;
+  color: $white;
+  background-color: $darkblue;
+  border-radius: 15px;
+  box-shadow: 0 9px $darkgrey;
+}
+
+.vieuwschaakbord:hover {
+  background-color: $lightblue;
+  transition: 0.4s;
+}
+
+.vieuwschaakbord:active {
+  background-color: $blue;
+  box-shadow: 0 5px $lightgrey;
+  transform: translateY(4px);
+}
+
+//memory button slide
+.vieuwmemory {
+  padding: 15px 25px;
+  font-size: 15px;
+  color: $white;
+  background-color: $darkblue;
+  border-radius: 15px;
+  box-shadow: 0 9px $darkgrey;
+}
+
+.vieuwmemory:hover {
+  background-color: $lightblue;
+  transition: 0.4s;
+}
+
+.vieuwmemory:active {
+  background-color: $blue;
+  box-shadow: 0 5px $lightgrey;
+  transform: translateY(4px);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+  width: 100%;
+}
+
+.col {
+  width: 49%;
+  img {
+    max-width: 80%;
+  }
+}
